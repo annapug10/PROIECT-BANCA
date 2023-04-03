@@ -22,7 +22,8 @@ void banca::main_terminal()
     do
     {
         clear_screen();
-        {cout << "Bine ati venit la terminalul bancii ITSCHOOL.Completati casutele de mai jos si urmaritit ce se va intampla!"<<endl;
+        {cout << "===Bine ati venit la terminalul bancii ITSCHOOL.==="<<endl;
+        cout<<"===VA ROG sa completati casutele de mai jos si urmaritit ce se va intampla!==="<<endl;
         cout<<"[1]Autentificare\n"<<endl;
         cout<<"[2]creeare cont nou\n"<<endl;
         cout<<"[3]Baza de date\n"<<endl;
@@ -81,7 +82,7 @@ void banca::create_newaccount()
         }
     } while (input != '1');
 
-    clear_screen();
+
    cout << "CREEARE CONT:\n";
 
     cout << "NUMELE SI PRENUMELE DUMNEAVOASTRA VA ROG: ";
@@ -128,9 +129,9 @@ void banca::create_newaccount()
     string iban = generateiban();
 
     database.push_back(new cont(surname, name, iban, 0, type));
+ cout << "NOUL CONT CU NUMELE SI PRENUMELE : " + surname + " " + name + " A FOST CREAT CU SUCCES.FELICTARI!\n";
         CSV.savedatabase(database);
-
-    cout << "NOUL CONT CU NUMELE SI PRENUMELE : " + surname + " " + name + " A FOST CREAT CU SUCCES.FELICTARI!\n";
+cout << "NOUL CONT CU NUMELE SI PRENUMELE : " + surname + " " + name + " A FOST CREAT CU SUCCES.FELICTARI!\n";
     getch();
 }
 
@@ -209,7 +210,7 @@ string iban;
         else
         {
             clear_screen();
-            cout << "Nu s-au găsit conturi înregistrate." <<endl;
+            cout << "Nu s-au gasit conturi inregistrate." <<endl;
             getch();
         }
     } while (true);
