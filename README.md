@@ -26,4 +26,4 @@ Un cont trebuie neaparat sa aibe un nume,prenume si un IBAN care trebuie sa fie 
         Trebuie cautat contul intordus iar daca exista se poate vizualiza
         Daca nu exista putem incepe o procedura de creare cont
 
-3. Un sistem in care putem sa salvam datele acestea intr-un fisier local (CSV file)
+3. Un sistem in care putem sa salvam datele acestea intr-un fisier local (CSV file).
